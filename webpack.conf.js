@@ -24,14 +24,6 @@ module.exports = {
         loader: 'babel',
         include: path.resolve(__dirname, './src'),
         exclude: /node_modules/
-      },
-      {
-        test: /\.js$/,
-        loader: 'babel',
-        include: path.resolve(__dirname, './node_modules/wechat-square-bracket-emotions/dist'),
-        query: {
-          presets: ['es2015']
-        }
       }
     ]
   },

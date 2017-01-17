@@ -2,7 +2,7 @@ import directiveInstall from './directives'
 
 const inBrowser = typeof window !== 'undefined'
 
-let install = (Vue, Options = {}) => {
+const install = (Vue, Options = {}) => {
   const $ImageHandler = {
     images: {
       loading: [],
@@ -22,6 +22,8 @@ let install = (Vue, Options = {}) => {
   Vue.$ImageHandler = $ImageHandler
 }
 
-export default ImagePlugins = {
+const ImagePlugins = {
   install: install
 }
+
+export default ImagePlugins

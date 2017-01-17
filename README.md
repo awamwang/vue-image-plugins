@@ -14,23 +14,16 @@ npm install --save vue-lazyload-options
 # note
 
 + 不要和Vue-lazyload同时使用
-+ 默认的preview方法是微信jssdk提供的preview，需要以微信jssdk
++ 默认的preview方法是微信jssdk提供的preview，需要以微信jssdk;需要保证在wx.ready后执行
 
 # params
 
-+ `emotionsBaseUrl` 如果传入该值，则使用自定义路径中的gif图片（0.gif - 104.gif）
 
 # properties
 
-+ `textToIdMap` getter
-+ `idToTextMap` getter
-+ `emotionSrcList` getter
 
 # methods
 
-+ `parse`
-+ `textToImage`
-+ `idToText`
 
 # others
 
