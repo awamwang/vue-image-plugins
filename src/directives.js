@@ -51,6 +51,7 @@ export default (Vue, Options) => {
     setCssStyle(el, binding.value.styleConfig)
     setPlaceHolder(el, binding.value.placeHolder)
     url = getEnhancedUrl(binding.value.url, binding.value.view)
+    url = Options.srcFilter && Options.srcFilter(el, binding, src)
     preview.setPreview.bind(this)(el, binding.value.preview)
     setDefaultImage(el, binding.value.defaultImage, Options)
     setImageSrc(el, url, binding.value)
